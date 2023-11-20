@@ -1,0 +1,116 @@
+body
+{
+	background-color: #282c35;
+	color: #ffffff;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+table
+{
+	border: 8px solid #4d4d4d;
+	margin: auto;
+	margin-top: 50px;
+	background-color: #333;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+input[type="button"]
+{
+	width: 115px;
+	padding: 20px 0;
+	background-color: #666;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+input[type="button"]:hover
+{
+	background-color: #888;
+	box-shadow: 0 0 10px #00ff00,0 0 20px #00ff00, 0 0 30px #00ff00;
+	transform: scale(0.75);
+}
+
+input[type="text"]
+{
+	padding: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+input[type="button"]:active
+{
+	transform: scale(0.95);
+	transition: transform 0.1s;
+}
+
+input[type="button"].operator::before
+{
+	font-family: 'Font Awesome 5 Free';
+	content: attr(value);
+	margin-right: 5px;
+}
+
+input[type="button"]
+{
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	overflow: hidden;
+	position: relative;
+}
+
+input[type="button"]:after
+{
+	content: "";
+	position: absolute;
+	background: rgba(255,255,255,0.4);
+	border-radius: 50%;
+	transform: scale(0);
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+input[type="button"]:hover:after
+{
+	transform: scale(3);
+	opacity: 0;
+}
+
+input[type="button"].operator
+{
+	background-color: #ff9500;
+}
+
+input[type="button"].operator:hover
+{
+	background-color: #ffad33;
+}
+
+input[type="button"].equal
+{
+	background-color: #28a745;
+}
+
+input[type="button"].equal:hover
+{
+	background-color: #218838;
+}
+
+input[type="button"].clear
+{
+	background-color: #dc3545;
+}
+
+input[type="button"].clear:hover
+{
+	background-color: #c82333;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator with Functionality</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-JT5COStq6kvVfYyxLrbeakf8THCrw8eE3PJ/6cBDZjDfOzh3Njs2LKnM9aOBZdEx" crossorigin="anonymous">
+</head>
+<body>
+	<table>
+
+		<tr>
+			<td colspan="3">
+				<input type="text" id="result" readonly>
+			</td>
+			<td><input type="button" class="clear" onclick="clearinput()" value="C"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" onclick="appendNumber(1)" value="1"></td>
+			<td><input type="button" onclick="appendNumber(2)" value="2"></td>
+			<td><input type="button" onclick="appendNumber(3)" value="3"></td>
+
+			<td><input type="button" class="operator" onclick="divide()" value="/"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" onclick="appendNumber(4)" value="4"></td>
+			<td><input type="button" onclick="appendNumber(5)" value="5"></td>
+			<td><input type="button" onclick="appendNumber(6)" value="6"></td>
+
+			<td><input type="button" class="operator" onclick="multiply()" value="*"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" onclick="appendNumber(7)" value="7"></td>
+			<td><input type="button" onclick="appendNumber(8)" value="8"></td>
+			<td><input type="button" onclick="appendNumber(9)" value="9"></td>
+
+			<td><input type="button" class="operator" onclick="minus()" value="-"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" onclick="appendNumber('.')" value="."></td>
+			<td><input type="button" onclick="appendNumber(0)" value="0"></td>
+			<td><input type="button" class="equal" onclick="calculate()" value="="></td>
+
+			<td><input type="button" class="operator" onclick="add()" value="+"></td>
+		</tr>
+
+	</table>
+
+	<script src="main.js"></script>
+</body>
+</html>
